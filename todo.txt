@@ -1,2 +1,4 @@
 - updated README with usage instructions
 - validate sourcemap configurations
+- configuration option to enable/disable sentry reporting for logging errors
+- update some method names (combine/separate a few methods)
