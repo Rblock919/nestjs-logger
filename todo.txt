@@ -1,0 +1,2 @@
+- updated README with usage instructions
+- validate sourcemap configurations
