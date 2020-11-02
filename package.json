@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "Backend logger for nestjs apps implementing loggly",
   "author": "Ryan Block",
-  "private": false,
-  "license": "UNLICENSED",
+  "license": "ISC",
   "readmeFilename": "README.md",
   "main": "dist/index.js",
   "files": [
@@ -12,9 +11,9 @@
     "*.md"
   ],
   "scripts": {
-    "prepare": "nest build",
     "format": "prettier --write 'src/**/*.ts'",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "prepare": "nest build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
