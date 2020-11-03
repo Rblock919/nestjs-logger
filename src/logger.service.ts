@@ -2,10 +2,12 @@ import { Logger, Injectable, Scope, LogLevel, Inject } from '@nestjs/common';
 import * as loggly from 'node-loggly-bulk';
 import * as Sentry from '@sentry/minimal';
 
-import { LogglyClient } from './interfaces/logging-client.interface';
+import {
+  LogglyClient,
+  LogglyPayload,
+  LogglyClientConfigurations,
+} from './interfaces/loggly.interface';
 import { LoggerServiceOptions } from './interfaces/logger-service-options.interface';
-import { LogglyPayload } from './interfaces/loggly-payload.interface';
-import { LogglyClientConfigurations } from './interfaces/loggly-client-configurations.interface';
 
 @Injectable({ scope: Scope.TRANSIENT })
 export class LoggerService extends Logger {

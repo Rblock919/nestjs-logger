@@ -1,6 +1,5 @@
 import { LogLevel } from '@nestjs/common';
-import { LogglyClient } from './logging-client.interface';
-import { LogglyClientConfigurations } from './loggly-client-configurations.interface';
+import { LogglyClient, LogglyClientConfigurations } from './loggly.interface';
 
 export interface LoggerServiceOptions {
   logglyConfiguration?: LogglyClient | LogglyClientConfigurations;

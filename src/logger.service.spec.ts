@@ -1,6 +1,6 @@
 import { LoggerService } from './logger.service';
 import { LoggerServiceOptions } from './interfaces/logger-service-options.interface';
-import { LogglyClient } from './interfaces/logging-client.interface';
+import { LogglyClient } from './interfaces/loggly.interface';
 
 describe('LoggerService', () => {
   beforeEach(() => {
