@@ -1581,28 +1581,18 @@
         "signature": "b05826319be14720ae1384338cba8fada70001dc74dcc570de269e31c0e063bf",
         "affectsGlobalScope": false
       },
-      "./src/interfaces/logging-client.interface.ts": {
-        "version": "246696c06e3f47b75aaf77fd43fe916003ac0769a08ecfc4eaebd7528e781d19",
-        "signature": "ad321cc23d1b30807413b09faac0372ca5331756514c279245cb7fe070a40b31",
-        "affectsGlobalScope": false
-      },
-      "./src/interfaces/loggly-client-configurations.interface.ts": {
-        "version": "0e992dfe1919d1e0e8f3b28ce79880de2e9d234914daaa975a4e0e9f5f98147e",
-        "signature": "c4e7512d06a2860ee5cd904be8f4c317f611b46e5ac26084b3a14bf8b560ae22",
+      "./src/interfaces/loggly.interface.ts": {
+        "version": "3d150067d738856d7b8fa8bba886f3636fc51cc00a065e08352e22dc044f2bff",
+        "signature": "9dd528291dd4209185ddf362a57bca7c2a6817dcdbe35adcc927e4f4e7273e78",
         "affectsGlobalScope": false
       },
       "./src/interfaces/logger-service-options.interface.ts": {
-        "version": "ba117cb884aacb264473d34cb0cacb5661b5a2901d5304f676822756cd9f7cb9",
-        "signature": "aa87e1a83be64a3bcb1c5a0722e11bb67d36259efa4426a913d04aafed18b1ad",
-        "affectsGlobalScope": false
-      },
-      "./src/interfaces/loggly-payload.interface.ts": {
-        "version": "7587b9d759c05761d88a75d1467738ca2f6c559135182fc37886c4765de98eec",
-        "signature": "f31725c0627adfd50d94ff31f40cb223a3d00ea879bd0e1f238e1d5c0271680b",
+        "version": "c4aa03df44d9103ede469a1268727fb2b0f865b67b05fd65a61b80479d121ba2",
+        "signature": "9b614d25bab10a4284d7fd3616b325d7246523f0af7b4803ae1890709214d946",
         "affectsGlobalScope": false
       },
       "./src/logger.service.ts": {
-        "version": "11af6edccfb81f7c52e25085ec613e8fcd31366c76d4439836e694c997bf5579",
+        "version": "ae7c5368a9f3e04b261a4b2b1f56aeb2b6de9c4a7e90513bd975aac17e485683",
         "signature": "d73b2a39518265550bd93325ec43ad708807c2de9d23b135f030d542d3016296",
         "affectsGlobalScope": false
       },
@@ -1612,8 +1602,8 @@
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "a929185f79c4ef986726b40fa187cea42a389ac356610375c25d65e85ed6b22d",
-        "signature": "a929185f79c4ef986726b40fa187cea42a389ac356610375c25d65e85ed6b22d",
+        "version": "a86569936f30418ff6cc849db7dd68a3244135f159953332f56fdb74832191f1",
+        "signature": "a86569936f30418ff6cc849db7dd68a3244135f159953332f56fdb74832191f1",
         "affectsGlobalScope": false
       },
       "./src/jest-setup-file.ts": {
@@ -3176,20 +3166,15 @@
       ],
       "./src/index.ts": [
         "./src/interfaces/logger-service-options.interface.ts",
-        "./src/interfaces/logging-client.interface.ts",
-        "./src/interfaces/loggly-client-configurations.interface.ts",
+        "./src/interfaces/loggly.interface.ts",
         "./src/logger.module.ts",
         "./src/logger.service.ts"
       ],
       "./src/interfaces/logger-service-options.interface.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
-        "./src/interfaces/logging-client.interface.ts",
-        "./src/interfaces/loggly-client-configurations.interface.ts"
+        "./src/interfaces/loggly.interface.ts"
       ],
-      "./src/interfaces/logging-client.interface.ts": [
-        "./node_modules/@nestjs/common/index.d.ts"
-      ],
-      "./src/interfaces/loggly-payload.interface.ts": [
+      "./src/interfaces/loggly.interface.ts": [
         "./node_modules/@nestjs/common/index.d.ts"
       ],
       "./src/jest-setup-file.ts": [
@@ -3204,9 +3189,7 @@
         "./node_modules/@nestjs/common/index.d.ts",
         "./node_modules/@sentry/minimal/dist/index.d.ts",
         "./src/interfaces/logger-service-options.interface.ts",
-        "./src/interfaces/logging-client.interface.ts",
-        "./src/interfaces/loggly-client-configurations.interface.ts",
-        "./src/interfaces/loggly-payload.interface.ts"
+        "./src/interfaces/loggly.interface.ts"
       ]
     },
     "exportedModulesMap": {
@@ -4453,20 +4436,15 @@
       ],
       "./src/index.ts": [
         "./src/interfaces/logger-service-options.interface.ts",
-        "./src/interfaces/logging-client.interface.ts",
-        "./src/interfaces/loggly-client-configurations.interface.ts",
+        "./src/interfaces/loggly.interface.ts",
         "./src/logger.module.ts",
         "./src/logger.service.ts"
       ],
       "./src/interfaces/logger-service-options.interface.ts": [
         "./node_modules/@nestjs/common/index.d.ts",
-        "./src/interfaces/logging-client.interface.ts",
-        "./src/interfaces/loggly-client-configurations.interface.ts"
+        "./src/interfaces/loggly.interface.ts"
       ],
-      "./src/interfaces/logging-client.interface.ts": [
-        "./node_modules/@nestjs/common/index.d.ts"
-      ],
-      "./src/interfaces/loggly-payload.interface.ts": [
+      "./src/interfaces/loggly.interface.ts": [
         "./node_modules/@nestjs/common/index.d.ts"
       ],
       "./src/jest-setup-file.ts": [

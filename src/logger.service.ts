@@ -15,6 +15,8 @@ export class LoggerService extends Logger {
 
   private logLevels: LogLevel[];
 
+  private sentryEnabled: boolean;
+
   constructor(@Inject('LOGGER_OPTIONS') options?: LoggerServiceOptions) {
     super();
 
@@ -70,8 +72,10 @@ export class LoggerService extends Logger {
     // If a client is passed in, use it. Otherwise default to creating a new one
     if (this.isLogglyClient(logglyConfiguration)) {
       this.client = logglyConfiguration;
+      this.sentryEnabled = false;
     } else {
       this.client = this.createLogglyClient(logglyConfiguration);
+      this.sentryEnabled = logglyConfiguration.enableSentry ?? false;
     }
   }
 
@@ -161,7 +165,9 @@ export class LoggerService extends Logger {
   private captureError(error: Error): void {
     // eslint-disable-next-line no-console
     console.log(`A loggly exception occured: ${error.stack}`);
-    Sentry.captureException(error);
+    if (this.sentryEnabled) {
+      Sentry.captureException(error);
+    }
   }
 
   private isLogglyClient(
